@@ -41,3 +41,4 @@ print(ieyasu.entry_fee())  # 1200 という値を出力
 print(ken.info_csv())  # "Ken Tanaka,15,1000" という値を出力
 print(tom.info_csv())  # "Tom Ford,57,1500" という値を出力
 print(ieyasu.info_csv())  # "Ieyasu Tokugawa,75,1200" という値を出力
+
