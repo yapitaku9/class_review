@@ -6,7 +6,7 @@ class Customer:
         self.age = age
 
     def full_name(self):
-        return self.first_name + " " + self.family_name
+        return f"{self.first_name} {self.family_name}"
 
     def entry_fee(self):
         if self.age < 20:
@@ -17,7 +17,7 @@ class Customer:
             return 1200
 
     def info_csv(self):
-        return self.first_name + " " + self.family_name + "," + str(self.age) + "," + str(self.entry_fee())
+        return f"{self.full_name()},{str(self.age)},{str(self.entry_fee())}"
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
@@ -41,3 +41,4 @@ print(ieyasu.entry_fee())  # 1200 という値を出力
 print(ken.info_csv())  # "Ken Tanaka,15,1000" という値を出力
 print(tom.info_csv())  # "Tom Ford,57,1500" という値を出力
 print(ieyasu.info_csv())  # "Ieyasu Tokugawa,75,1200" という値を出力
+
